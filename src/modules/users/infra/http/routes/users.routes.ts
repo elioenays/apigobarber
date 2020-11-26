@@ -2,46 +2,50 @@ import { Router } from 'express';
 import multer from 'multer';
 
 import ensureAuthenticated from '@modules/users/infra/middlewares/ensureAuthenticated';
-import CreateuserService from '@modules/users/services/CreateUserService';
+
 import uploadConfig from '@config/upload';
+
+import CreateuserService from '@modules/users/services/CreateUserService';
 import UpdateUserAvatarService from '@modules/users/services/UpdateUserAvatarService';
+import UsersRepository from '@modules/users/infra/typeorm/repositories/UsersRepository';
 
 const usersRouter = Router();
-
 const upload = multer(uploadConfig);
 
 usersRouter.post('/', async (request, response) => {
-	const { name, email, password } = request.body;
+  const { name, email, password } = request.body;
 
-	const createuser = new CreateuserService();
+  const usersRepository = new UsersRepository();
+  const createuser = new CreateuserService(usersRepository);
 
-	const user = await createuser.execute({
-		name,
-		email,
-		password,
-	});
+  const user = await createuser.execute({
+    name,
+    email,
+    password,
+  });
 
-	delete user.password;
+  delete user.password;
 
-	return response.json(user);
+  return response.json(user);
 });
 
 usersRouter.patch(
-	'/avatar',
-	ensureAuthenticated,
-	upload.single('avatar'),
-	async (request, response) => {
-		const updateUserAvatar = new UpdateUserAvatarService();
+  '/avatar',
+  ensureAuthenticated,
+  upload.single('avatar'),
+  async (request, response) => {
+    const usersRepository = new UsersRepository();
+    const updateUserAvatar = new UpdateUserAvatarService(usersRepository);
 
-		const user = await updateUserAvatar.execute({
-			user_id: request.user.id,
-			avatarFilename: request.file.filename,
-		});
+    const user = await updateUserAvatar.execute({
+      user_id: request.user.id,
+      avatarFilename: request.file.filename,
+    });
 
-		delete user.password;
+    delete user.password;
 
-		return response.json(user);
-	},
+    return response.json(user);
+  },
 );
 
 export default usersRouter;
