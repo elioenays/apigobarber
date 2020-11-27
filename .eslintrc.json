@@ -21,6 +21,8 @@
   },
   "plugins": ["@typescript-eslint", "prettier"],
   "rules": {
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "@typescript-eslint/no-var-requires": "off",
     "no-underscore-dangle": "off",
     "class-methods-use-this": "off",
     "@typescript-eslint/camelcase": "off",
