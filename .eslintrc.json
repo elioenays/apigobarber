@@ -24,6 +24,7 @@
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
     "@typescript-eslint/no-var-requires": "off",
     "no-underscore-dangle": "off",
+    "no-console": "off",
     "prefer-const": "off",
     "class-methods-use-this": "off",
     "@typescript-eslint/camelcase": "off",
