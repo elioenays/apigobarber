@@ -2,7 +2,9 @@ import { injectable, inject } from 'tsyringe';
 
 import IUsersRepository from '@modules/users/repositories/IUsersRepository';
 import AppError from '@shared/errors/AppError';
-import IUserTokensRepository from '../repositories/IUserTokensRepository';
+import IUserTokensRepository from '@modules/users/repositories/IUserTokensRepository';
+import IHashProvider from '@modules/users/providers/HashProvider/models/IHashProvider';
+import { addHours, isAfter } from 'date-fns';
 
 interface IRequest {
   token: string;
@@ -10,13 +12,16 @@ interface IRequest {
 }
 
 @injectable()
-class SendForgotPasswordEmailService {
+class ResetPasswordService {
   constructor(
     @inject('UsersRepository')
     private usersRepository: IUsersRepository,
 
     @inject('UserTokensRepository')
     private userTokensRepository: IUserTokensRepository,
+
+    @inject('HashProvider')
+    private hashProvider: IHashProvider,
   ) {}
 
   public async execute({ token, password }: IRequest): Promise<void> {
@@ -32,10 +37,18 @@ class SendForgotPasswordEmailService {
       throw new AppError('User does not exists');
     }
 
-    user.password = password;
+    const tokenCreadtedAt = userToken.created_at;
+
+    const compareDate = addHours(tokenCreadtedAt, 2);
+
+    if (isAfter(Date.now(), compareDate)) {
+      throw new AppError('Token expired');
+    }
+
+    user.password = await this.hashProvider.generateHash(password);
 
     await this.usersRepository.save(user);
   }
 }
 
-export default SendForgotPasswordEmailService;
+export default ResetPasswordService;
