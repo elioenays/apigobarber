@@ -16,7 +16,7 @@ const app = express();
 app.use(cors());
 
 app.use(express.json());
-app.use('/files', express.static(upload.directory));
+app.use('/files', express.static(upload.uploadsFolder));
 
 app.use(routes);
 
