@@ -12,6 +12,6 @@ routes.use('/appointments', appointmentsRouter);
 routes.use('/users', usersRouter);
 routes.use('/sessions', sessionsRouter);
 routes.use('/password', passwordRouter);
-routes.unsubscribe('/profile', profileRouter);
+routes.use('/profile', profileRouter);
 
 export default routes;
