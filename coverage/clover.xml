@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1607349253431" clover="3.2.0">
-  <project timestamp="1607349253431" name="All files">
-    <metrics statements="283" coveredstatements="283" conditionals="41" coveredconditionals="41" methods="12" coveredmethods="12" elements="336" coveredelements="336" complexity="0" loc="283" ncloc="283" packages="2" files="6" classes="6"/>
+<coverage generated="1607389085242" clover="3.2.0">
+  <project timestamp="1607389085242" name="All files">
+    <metrics statements="301" coveredstatements="301" conditionals="41" coveredconditionals="41" methods="12" coveredmethods="12" elements="354" coveredelements="354" complexity="0" loc="301" ncloc="301" packages="2" files="6" classes="6"/>
     <package name="appointments.services">
       <metrics statements="41" coveredstatements="41" conditionals="5" coveredconditionals="5" methods="2" coveredmethods="2"/>
-      <file name="CreateAppointmentService.ts" path="C:\Users\elioenay.silva\www\gostack\nivel-04\primeiro-projeto-node\src\modules\appointments\services\CreateAppointmentService.ts">
+      <file name="CreateAppointmentService.ts" path="C:\Users\whoami\www\gostack\nivel-04\primeiro-projeto-node\src\modules\appointments\services\CreateAppointmentService.ts">
         <metrics statements="41" coveredstatements="41" conditionals="5" coveredconditionals="5" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -50,8 +50,8 @@
       </file>
     </package>
     <package name="users.services">
-      <metrics statements="242" coveredstatements="242" conditionals="36" coveredconditionals="36" methods="10" coveredmethods="10"/>
-      <file name="AuthenticateUserService.ts" path="C:\Users\elioenay.silva\www\gostack\nivel-04\primeiro-projeto-node\src\modules\users\services\AuthenticateUserService.ts">
+      <metrics statements="260" coveredstatements="260" conditionals="36" coveredconditionals="36" methods="10" coveredmethods="10"/>
+      <file name="AuthenticateUserService.ts" path="C:\Users\whoami\www\gostack\nivel-04\primeiro-projeto-node\src\modules\users\services\AuthenticateUserService.ts">
         <metrics statements="59" coveredstatements="59" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -113,7 +113,7 @@
         <line num="58" count="1" type="stmt"/>
         <line num="59" count="1" type="stmt"/>
       </file>
-      <file name="CreateUserService.ts" path="C:\Users\elioenay.silva\www\gostack\nivel-04\primeiro-projeto-node\src\modules\users\services\CreateUserService.ts">
+      <file name="CreateUserService.ts" path="C:\Users\whoami\www\gostack\nivel-04\primeiro-projeto-node\src\modules\users\services\CreateUserService.ts">
         <metrics statements="44" coveredstatements="44" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -132,12 +132,12 @@
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="2" type="cond" truecount="1" falsecount="0"/>
         <line num="17" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
-        <line num="20" count="4" type="stmt"/>
-        <line num="21" count="4" type="stmt"/>
-        <line num="22" count="4" type="stmt"/>
-        <line num="23" count="4" type="stmt"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="23" count="5" type="stmt"/>
         <line num="24" count="2" type="stmt"/>
         <line num="25" count="2" type="cond" truecount="1" falsecount="0"/>
         <line num="26" count="5" type="cond" truecount="1" falsecount="0"/>
@@ -160,7 +160,7 @@
         <line num="43" count="1" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
       </file>
-      <file name="ResetPasswordService.ts" path="C:\Users\elioenay.silva\www\gostack\nivel-04\primeiro-projeto-node\src\modules\users\services\ResetPasswordService.ts">
+      <file name="ResetPasswordService.ts" path="C:\Users\whoami\www\gostack\nivel-04\primeiro-projeto-node\src\modules\users\services\ResetPasswordService.ts">
         <metrics statements="54" coveredstatements="54" conditionals="9" coveredconditionals="9" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
@@ -217,8 +217,8 @@
         <line num="53" count="1" type="stmt"/>
         <line num="54" count="1" type="stmt"/>
       </file>
-      <file name="SendForgotPasswordEmailService.ts" path="C:\Users\elioenay.silva\www\gostack\nivel-04\primeiro-projeto-node\src\modules\users\services\SendForgotPasswordEmailService.ts">
-        <metrics statements="41" coveredstatements="41" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
+      <file name="SendForgotPasswordEmailService.ts" path="C:\Users\whoami\www\gostack\nivel-04\primeiro-projeto-node\src\modules\users\services\SendForgotPasswordEmailService.ts">
+        <metrics statements="59" coveredstatements="59" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -231,9 +231,9 @@
         <line num="10" count="1" type="stmt"/>
         <line num="11" count="1" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
-        <line num="13" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="15" count="3" type="stmt"/>
+        <line num="15" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="16" count="3" type="stmt"/>
         <line num="17" count="3" type="stmt"/>
         <line num="18" count="3" type="stmt"/>
@@ -242,26 +242,44 @@
         <line num="21" count="3" type="stmt"/>
         <line num="22" count="3" type="stmt"/>
         <line num="23" count="3" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="25" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="26" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="27" count="3" type="stmt"/>
-        <line num="28" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="29" count="1" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="27" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="28" count="3" type="stmt"/>
+        <line num="29" count="3" type="cond" truecount="1" falsecount="0"/>
         <line num="30" count="1" type="stmt"/>
-        <line num="31" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="32" count="2" type="stmt"/>
-        <line num="33" count="3" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="33" count="2" type="stmt"/>
         <line num="34" count="3" type="stmt"/>
         <line num="35" count="3" type="stmt"/>
         <line num="36" count="3" type="stmt"/>
         <line num="37" count="3" type="stmt"/>
         <line num="38" count="3" type="stmt"/>
-        <line num="39" count="1" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-        <line num="41" count="1" type="stmt"/>
+        <line num="39" count="3" type="stmt"/>
+        <line num="40" count="3" type="stmt"/>
+        <line num="41" count="3" type="stmt"/>
+        <line num="42" count="3" type="stmt"/>
+        <line num="43" count="3" type="stmt"/>
+        <line num="44" count="3" type="stmt"/>
+        <line num="45" count="3" type="stmt"/>
+        <line num="46" count="3" type="stmt"/>
+        <line num="47" count="3" type="stmt"/>
+        <line num="48" count="3" type="stmt"/>
+        <line num="49" count="3" type="stmt"/>
+        <line num="50" count="3" type="stmt"/>
+        <line num="51" count="3" type="stmt"/>
+        <line num="52" count="3" type="stmt"/>
+        <line num="53" count="3" type="stmt"/>
+        <line num="54" count="3" type="stmt"/>
+        <line num="55" count="3" type="stmt"/>
+        <line num="56" count="3" type="stmt"/>
+        <line num="57" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
       </file>
-      <file name="UpdateUserAvatarService.ts" path="C:\Users\elioenay.silva\www\gostack\nivel-04\primeiro-projeto-node\src\modules\users\services\UpdateUserAvatarService.ts">
+      <file name="UpdateUserAvatarService.ts" path="C:\Users\whoami\www\gostack\nivel-04\primeiro-projeto-node\src\modules\users\services\UpdateUserAvatarService.ts">
         <metrics statements="44" coveredstatements="44" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
