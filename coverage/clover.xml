@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1607443165001" clover="3.2.0">
-  <project timestamp="1607443165002" name="All files">
-    <metrics statements="372" coveredstatements="370" conditionals="57" coveredconditionals="56" methods="14" coveredmethods="14" elements="443" coveredelements="440" complexity="0" loc="372" ncloc="372" packages="2" files="7" classes="7"/>
+<coverage generated="1607447581280" clover="3.2.0">
+  <project timestamp="1607447581280" name="All files">
+    <metrics statements="401" coveredstatements="401" conditionals="63" coveredconditionals="63" methods="16" coveredmethods="16" elements="480" coveredelements="480" complexity="0" loc="401" ncloc="401" packages="2" files="8" classes="8"/>
     <package name="appointments.services">
       <metrics statements="41" coveredstatements="41" conditionals="5" coveredconditionals="5" methods="2" coveredmethods="2"/>
       <file name="CreateAppointmentService.ts" path="C:\Users\elioenay.silva\www\gostack\nivel-04\primeiro-projeto-node\src\modules\appointments\services\CreateAppointmentService.ts">
@@ -50,7 +50,7 @@
       </file>
     </package>
     <package name="users.services">
-      <metrics statements="331" coveredstatements="329" conditionals="52" coveredconditionals="51" methods="12" coveredmethods="12"/>
+      <metrics statements="360" coveredstatements="360" conditionals="58" coveredconditionals="58" methods="14" coveredmethods="14"/>
       <file name="AuthenticateUserService.ts" path="C:\Users\elioenay.silva\www\gostack\nivel-04\primeiro-projeto-node\src\modules\users\services\AuthenticateUserService.ts">
         <metrics statements="59" coveredstatements="59" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
@@ -279,8 +279,40 @@
         <line num="58" count="1" type="stmt"/>
         <line num="59" count="1" type="stmt"/>
       </file>
+      <file name="ShowProfileService.ts" path="C:\Users\elioenay.silva\www\gostack\nivel-04\primeiro-projeto-node\src\modules\users\services\ShowProfileService.ts">
+        <metrics statements="29" coveredstatements="29" conditionals="5" coveredconditionals="5" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="13" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="14" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="19" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+      </file>
       <file name="UpdateProfileService.ts" path="C:\Users\elioenay.silva\www\gostack\nivel-04\primeiro-projeto-node\src\modules\users\services\UpdateProfileService.ts">
-        <metrics statements="71" coveredstatements="69" conditionals="16" coveredconditionals="15" methods="2" coveredmethods="2"/>
+        <metrics statements="71" coveredstatements="71" conditionals="17" coveredconditionals="17" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -299,56 +331,56 @@
         <line num="16" count="1" type="stmt"/>
         <line num="17" count="1" type="cond" truecount="1" falsecount="0"/>
         <line num="18" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="19" count="5" type="stmt"/>
-        <line num="20" count="5" type="stmt"/>
-        <line num="21" count="5" type="stmt"/>
-        <line num="22" count="5" type="stmt"/>
-        <line num="23" count="5" type="stmt"/>
-        <line num="24" count="5" type="stmt"/>
+        <line num="19" count="6" type="stmt"/>
+        <line num="20" count="6" type="stmt"/>
+        <line num="21" count="6" type="stmt"/>
+        <line num="22" count="6" type="stmt"/>
+        <line num="23" count="6" type="stmt"/>
+        <line num="24" count="6" type="stmt"/>
         <line num="25" count="1" type="stmt"/>
         <line num="26" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="27" count="5" type="stmt"/>
-        <line num="28" count="5" type="stmt"/>
-        <line num="29" count="5" type="stmt"/>
-        <line num="30" count="5" type="stmt"/>
-        <line num="31" count="5" type="stmt"/>
-        <line num="32" count="5" type="stmt"/>
-        <line num="33" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="34" count="5" type="stmt"/>
-        <line num="35" count="5" type="cond" truecount="0" falsecount="1"/>
-        <line num="36" count="0" type="stmt"/>
-        <line num="37" count="0" type="stmt"/>
-        <line num="38" count="5" type="stmt"/>
+        <line num="27" count="6" type="stmt"/>
+        <line num="28" count="6" type="stmt"/>
+        <line num="29" count="6" type="stmt"/>
+        <line num="30" count="6" type="stmt"/>
+        <line num="31" count="6" type="stmt"/>
+        <line num="32" count="6" type="stmt"/>
+        <line num="33" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="34" count="6" type="stmt"/>
+        <line num="35" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="5" type="cond" truecount="1" falsecount="0"/>
         <line num="39" count="5" type="stmt"/>
-        <line num="40" count="5" type="stmt"/>
-        <line num="41" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="40" count="6" type="stmt"/>
+        <line num="41" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="42" count="1" type="stmt"/>
         <line num="43" count="1" type="stmt"/>
         <line num="44" count="4" type="cond" truecount="1" falsecount="0"/>
         <line num="45" count="4" type="stmt"/>
         <line num="46" count="4" type="stmt"/>
         <line num="47" count="4" type="stmt"/>
-        <line num="48" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="6" type="cond" truecount="2" falsecount="0"/>
         <line num="49" count="1" type="stmt"/>
         <line num="50" count="1" type="stmt"/>
         <line num="51" count="1" type="stmt"/>
         <line num="52" count="1" type="stmt"/>
         <line num="53" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="54" count="5" type="cond" truecount="3" falsecount="0"/>
+        <line num="54" count="6" type="cond" truecount="3" falsecount="0"/>
         <line num="55" count="2" type="stmt"/>
         <line num="56" count="2" type="stmt"/>
         <line num="57" count="2" type="stmt"/>
         <line num="58" count="2" type="stmt"/>
-        <line num="59" count="5" type="stmt"/>
-        <line num="60" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="59" count="6" type="stmt"/>
+        <line num="60" count="6" type="cond" truecount="1" falsecount="0"/>
         <line num="61" count="1" type="stmt"/>
         <line num="62" count="1" type="stmt"/>
         <line num="63" count="1" type="stmt"/>
         <line num="64" count="1" type="stmt"/>
-        <line num="65" count="5" type="stmt"/>
-        <line num="66" count="5" type="stmt"/>
-        <line num="67" count="5" type="cond" truecount="1" falsecount="0"/>
-        <line num="68" count="5" type="stmt"/>
+        <line num="65" count="6" type="stmt"/>
+        <line num="66" count="6" type="stmt"/>
+        <line num="67" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="68" count="6" type="stmt"/>
         <line num="69" count="1" type="stmt"/>
         <line num="70" count="1" type="stmt"/>
         <line num="71" count="1" type="stmt"/>
