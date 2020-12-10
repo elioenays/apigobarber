@@ -1,6 +1,4 @@
-import { injectable, inject } from 'tsyringe';
-
-import User from '@modules/users/infra/typeorm/entities/User';
+import { injectable } from 'tsyringe';
 
 interface IRequest {
   user_id: string;
@@ -9,7 +7,7 @@ interface IRequest {
 }
 
 type IResponse = Array<{
-  dau: number;
+  day: number;
   available: boolean;
 }>;
 
@@ -17,11 +15,9 @@ type IResponse = Array<{
 class ListProviderMonthAvailabilityService {
   constructor() {}
 
-  public async execute({
-    user_id,
-    year,
-    month,
-  }: IRequest): Promise<IResponse> {}
+  public async execute({ user_id, year, month }: IRequest): Promise<IResponse> {
+    return [{ day: 1, available: false }];
+  }
 }
 
 export default ListProviderMonthAvailabilityService;
