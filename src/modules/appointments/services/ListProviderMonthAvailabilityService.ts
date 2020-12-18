@@ -33,6 +33,8 @@ class ListProviderMonthAvailabilityService {
     );
 
     console.log(appointments);
+
+    return [{ day: 1, available: false }];
   }
 }
 
