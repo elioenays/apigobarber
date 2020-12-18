@@ -1,5 +1,5 @@
 import { inject, injectable } from 'tsyringe';
-import IAppointmentsRepository from '../repositories/IAppointentsRepostory';
+import IAppointmentsRepository from '@modules/appointments/repositories/IAppointentsRepostory';
 
 interface IRequest {
   provider_id: string;
@@ -24,9 +24,15 @@ class ListProviderMonthAvailabilityService {
     year,
     month,
   }: IRequest): Promise<IResponse> {
-    const appointments = this.appointmentsRepository.return[
-      { day: 1, available: false }
-    ];
+    const appointments = await this.appointmentsRepository.findAllInMonthFromProvider(
+      {
+        provider_id,
+        year,
+        month,
+      },
+    );
+
+    console.log(appointments);
   }
 }
 
