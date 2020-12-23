@@ -1,5 +1,6 @@
 import { inject, injectable } from 'tsyringe';
 import { getDate, getDaysInMonth } from 'date-fns';
+
 import IAppointmentsRepository from '@modules/appointments/repositories/IAppointentsRepostory';
 
 interface IRequest {
