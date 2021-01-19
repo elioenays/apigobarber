@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1611009781497" clover="3.2.0">
-  <project timestamp="1611009781497" name="All files">
-    <metrics statements="567" coveredstatements="565" conditionals="88" coveredconditionals="87" methods="22" coveredmethods="22" elements="677" coveredelements="674" complexity="0" loc="567" ncloc="567" packages="2" files="11" classes="11"/>
+<coverage generated="1611072758663" clover="3.2.0">
+  <project timestamp="1611072758663" name="All files">
+    <metrics statements="606" coveredstatements="606" conditionals="93" coveredconditionals="93" methods="24" coveredmethods="24" elements="723" coveredelements="723" complexity="0" loc="606" ncloc="606" packages="2" files="12" classes="12"/>
     <package name="appointments.services">
-      <metrics statements="207" coveredstatements="207" conditionals="31" coveredconditionals="31" methods="8" coveredmethods="8"/>
+      <metrics statements="246" coveredstatements="246" conditionals="35" coveredconditionals="35" methods="10" coveredmethods="10"/>
       <file name="CreateAppointmentService.ts" path="C:\Users\Elioenay\www\gostack\nivel-04\primeiro-projeto-node\src\modules\appointments\services\CreateAppointmentService.ts">
         <metrics statements="59" coveredstatements="59" conditionals="12" coveredconditionals="12" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
@@ -65,6 +65,48 @@
         <line num="57" count="1" type="stmt"/>
         <line num="58" count="1" type="stmt"/>
         <line num="59" count="1" type="stmt"/>
+      </file>
+      <file name="ListProviderAppointmentsService.ts" path="C:\Users\Elioenay\www\gostack\nivel-04\primeiro-projeto-node\src\modules\appointments\services\ListProviderAppointmentsService.ts">
+        <metrics statements="39" coveredstatements="39" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="14" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="15" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+        <line num="20" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="28" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
       </file>
       <file name="ListProviderDayAvailabilityService.ts" path="C:\Users\Elioenay\www\gostack\nivel-04\primeiro-projeto-node\src\modules\appointments\services\ListProviderDayAvailabilityService.ts">
         <metrics statements="66" coveredstatements="66" conditionals="8" coveredconditionals="8" methods="2" coveredmethods="2"/>
@@ -225,7 +267,7 @@
       </file>
     </package>
     <package name="users.services">
-      <metrics statements="360" coveredstatements="358" conditionals="57" coveredconditionals="56" methods="14" coveredmethods="14"/>
+      <metrics statements="360" coveredstatements="360" conditionals="58" coveredconditionals="58" methods="14" coveredmethods="14"/>
       <file name="AuthenticateUserService.ts" path="C:\Users\Elioenay\www\gostack\nivel-04\primeiro-projeto-node\src\modules\users\services\AuthenticateUserService.ts">
         <metrics statements="59" coveredstatements="59" conditionals="7" coveredconditionals="7" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
@@ -289,7 +331,7 @@
         <line num="59" count="1" type="stmt"/>
       </file>
       <file name="CreateUserService.ts" path="C:\Users\Elioenay\www\gostack\nivel-04\primeiro-projeto-node\src\modules\users\services\CreateUserService.ts">
-        <metrics statements="44" coveredstatements="42" conditionals="5" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <metrics statements="44" coveredstatements="44" conditionals="6" coveredconditionals="6" methods="2" coveredmethods="2"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -305,33 +347,33 @@
         <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
-        <line num="16" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="17" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="18" count="3" type="stmt"/>
-        <line num="19" count="3" type="stmt"/>
-        <line num="20" count="3" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
-        <line num="22" count="3" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
-        <line num="24" count="1" type="stmt"/>
-        <line num="25" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="26" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="27" count="2" type="stmt"/>
-        <line num="28" count="2" type="cond" truecount="0" falsecount="1"/>
-        <line num="29" count="0" type="stmt"/>
-        <line num="30" count="0" type="stmt"/>
-        <line num="31" count="2" type="stmt"/>
-        <line num="32" count="2" type="stmt"/>
-        <line num="33" count="2" type="stmt"/>
-        <line num="34" count="2" type="stmt"/>
-        <line num="35" count="2" type="stmt"/>
-        <line num="36" count="2" type="stmt"/>
-        <line num="37" count="2" type="stmt"/>
-        <line num="38" count="2" type="stmt"/>
-        <line num="39" count="2" type="stmt"/>
-        <line num="40" count="2" type="stmt"/>
-        <line num="41" count="2" type="stmt"/>
-        <line num="42" count="1" type="stmt"/>
+        <line num="16" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="17" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="18" count="5" type="stmt"/>
+        <line num="19" count="5" type="stmt"/>
+        <line num="20" count="5" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="23" count="5" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="25" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="26" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="27" count="5" type="stmt"/>
+        <line num="28" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="33" count="5" type="stmt"/>
+        <line num="34" count="5" type="stmt"/>
+        <line num="35" count="5" type="stmt"/>
+        <line num="36" count="5" type="stmt"/>
+        <line num="37" count="5" type="stmt"/>
+        <line num="38" count="5" type="stmt"/>
+        <line num="39" count="5" type="stmt"/>
+        <line num="40" count="5" type="stmt"/>
+        <line num="41" count="5" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
         <line num="43" count="1" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
       </file>
