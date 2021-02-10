@@ -3,6 +3,7 @@ import 'reflect-metadata';
 import express, { Request, Response } from 'express';
 import 'express-async-errors';
 import cors from 'cors';
+import { errors } from 'celebrate';
 
 import upload from '@config/upload';
 import AppError from '@shared/errors/AppError';
@@ -19,6 +20,8 @@ app.use(express.json());
 app.use('/files', express.static(upload.uploadsFolder));
 
 app.use(routes);
+
+app.use(errors());
 
 app.use((err: Error, request: Request, response: Response) => {
   if (err instanceof AppError) {
