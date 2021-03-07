@@ -5,6 +5,7 @@ import IUsersRepository from '@modules/users/repositories/IUsersRepository';
 
 import AppError from '@shared/errors/AppError';
 import IHashProvider from '@modules/users/providers/HashProvider/models/IHashProvider';
+import ICacheProvider from '@shared/container/providers/CacheProvider/Models/ICacheProvider';
 
 interface IRequest {
   name: string;
@@ -17,6 +18,9 @@ class CreateuserService {
   constructor(
     @inject('UsersRepository')
     private usersRepository: IUsersRepository,
+
+    @inject('CacheProvider')
+    private CacheProvider: ICacheProvider,
 
     @inject('HashProvider')
     private hashProvider: IHashProvider,
@@ -36,6 +40,8 @@ class CreateuserService {
       email,
       password: hashedPassword,
     });
+
+    await this.CacheProvider.invalidatePrefix('providers-list');
 
     return user;
   }
