@@ -32,7 +32,7 @@ class User {
       return null;
     }
 
-    switch (upload.driver) {
+    switch (process.env.STORAGE_DRIVER) {
       case 'disk':
         return `${process.env.APP_API_URL}/files/${this.avatar}`;
       case 's3':
