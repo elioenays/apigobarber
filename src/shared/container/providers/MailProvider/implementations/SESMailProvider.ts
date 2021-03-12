@@ -6,6 +6,7 @@ import IMailTemplateProvier from '@shared/container/providers/MailTemplateProvid
 
 import ISendMailDTO from '@shared/container/providers/MailProvider/dtos/ISendMailDTO';
 import IMailProvider from '@shared/container/providers/MailProvider/models/IMailProvider';
+import mail from '@config/mail';
 
 @injectable()
 export default class SESMailProvider implements IMailProvider {
@@ -29,10 +30,12 @@ export default class SESMailProvider implements IMailProvider {
     from,
     templateData,
   }: ISendMailDTO): Promise<void> {
+    const { name, email } = mail.defaults.from;
+
     await this.client.sendMail({
       from: {
-        name: from?.name || 'Equipe GoBarber',
-        address: from?.email || 'equipe@eli.teste.com.br',
+        name: from?.name || name,
+        address: from?.email || email,
       },
       to: {
         name: to.name,
